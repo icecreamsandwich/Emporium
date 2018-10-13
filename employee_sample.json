@@ -1,0 +1,29 @@
+[
+ {
+    "id" :1 ,
+    "name": "neethu kinara",
+    "address": "Mock address",
+    "email": "neethu.k@piserve.com",
+    "dob": "01.01.1985",
+    "doj": "01.01.2010",
+    "Skills" :"shell,java,python,hadoop,aws"
+  },
+ {
+    "id" :2 ,
+    "name": "sudeep cv",
+    "address": "Mock address",
+    "email": "sudeep.cv@piserve.com",
+    "dob": "01.01.1990",
+    "doj": "01.01.2016",
+    "Skills" :"java,Jira,bigdata"
+ },
+  {
+    "id" :3,
+    "name": "aaroon christopher",
+    "address": "Mock address",
+    "email": "aaron.christo@piserve.com",
+    "dob": "01.01.1995",
+    "doj": "01.01.2017",
+    "Skills" :"android,shell,python"
+ }
+]
