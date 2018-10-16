@@ -9,12 +9,13 @@ import {
   Text,
   TouchableOpacity,
   TouchableHighlight,
+  TouchableNativeFeedback,
   View,
   FlatList
 } from 'react-native';
 import randomcolor from 'randomcolor';
 
-export default class EmployeeList extends React.Component {
+export default class EmployeeList extends React.Component<*> {
 
   constructor(props){
     super(props);
@@ -35,8 +36,28 @@ export default class EmployeeList extends React.Component {
     });
   }
 
+  goToEmplyeeDetails(item){
+    this.props.navigation.navigate('EmployeeDetails',{employeeDetails:item});
+  }
+
+  _renderItem = ({ item }) => {
+      return (
+       <TouchableHighlight style={[styles.button, this.setBgColor()]} onPress={()=>this.goToEmplyeeDetails(item)}>
+         <View style={styles.item}>
+           <View style={styles.avatar}>
+             <Text style={styles.letter}>{item.name.slice(0, 1).toUpperCase()}</Text>
+           </View>
+           <View style={styles.details}>
+             <Text style={styles.name}>{item.name}</Text>
+             <Text style={styles.number}>{item.mob}</Text>
+           </View>
+         </View>
+       </TouchableHighlight>
+      );
+  }
+  _ItemSeparator = () => <View style={styles.separator}></View>;
+
   render() {
-   //const { navigation } = this.props.navigation;
     if(this.state.isLoading){
       return(
         <View style={{flex: 1, padding: 20}}>
@@ -50,13 +71,17 @@ export default class EmployeeList extends React.Component {
           <View style={styles.getStartedContainer}>
             <Text style={styles.getStartedText}> All Employees </Text>
           </View>
-          {this.state.dataSource.map(function(employee, i) {
-            return (
-              <TouchableOpacity style={[styles.button, this.setBgColor()]} onPress={()=>this.props.navigation.navigate('EmployeeDetails',{employeeDetails:employee}) } underlayColor="#999" key={i}>
-                <Text style={styles.buttonText}>{employee.name}</Text>
-              </TouchableOpacity>
-            );
-          }, this)}
+
+          <FlatList
+            data={this.state.dataSource}
+            keyExtractor={(item, i) => String(i)}
+            renderItem={this._renderItem}
+            ItemSeparatorComponent={this._ItemSeparator}
+          />
+          {/* <TouchableOpacity style={[styles.button, this.setBgColor()]} onPress={()=>this.props.navigation.navigate('EmployeeDetails',{employeeDetails:employee}) } underlayColor="#999" key={i}>
+            <Text style={styles.buttonText}>{employee.name}</Text>
+          </TouchableOpacity> */}
+
         </ScrollView>
       );
     }
@@ -104,5 +129,40 @@ export default class EmployeeList extends React.Component {
       fontWeight: 'bold',
       color: '#666666',
       fontSize: 18
-    }
+    },
+    item: {
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 8,
+  },
+  avatar: {
+    height: 36,
+    width: 36,
+    borderRadius: 18,
+    backgroundColor: '#e91e63',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  letter: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  details: {
+    margin: 8,
+  },
+  name: {
+    fontWeight: 'bold',
+    fontSize: 14,
+    color: 'black',
+  },
+  number: {
+    fontSize: 12,
+    color: '#999',
+  },
+  separator: {
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: 'rgba(0, 0, 0, .08)',
+  },
+
   });

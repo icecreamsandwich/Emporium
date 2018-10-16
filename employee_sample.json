@@ -6,7 +6,8 @@
     "email": "neethu.k@piserve.com",
     "dob": "01.01.1985",
     "doj": "01.01.2010",
-    "Skills" :"shell,java,python,hadoop,aws"
+    "Skills" :"Shell, Java, Python, Hadoop, Aws",
+    "mob":"9947875262"
   },
  {
     "id" :2 ,
@@ -15,7 +16,8 @@
     "email": "sudeep.cv@piserve.com",
     "dob": "01.01.1990",
     "doj": "01.01.2016",
-    "Skills" :"java,Jira,bigdata"
+    "Skills" :"Java, Jira, Bigdata",
+    "mob":"9947875244"
  },
   {
     "id" :3,
@@ -24,6 +26,7 @@
     "email": "aaron.christo@piserve.com",
     "dob": "01.01.1995",
     "doj": "01.01.2017",
-    "Skills" :"android,shell,python"
+    "Skills" :"Android, Shell, Python",
+    "mob":"9947875233"
  }
 ]
