@@ -12,14 +12,6 @@ export default class EmployeeDetails extends React.Component {
     filteredEmployee = [];
   }
 
-
-componentWillMount(){
-
-}
-componentDidMount(){
-
-  }
-
   viewStyle() {
     return {
       flex: 1,

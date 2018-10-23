@@ -78,10 +78,6 @@ export default class EmployeeList extends React.Component<*> {
             renderItem={this._renderItem}
             ItemSeparatorComponent={this._ItemSeparator}
           />
-          {/* <TouchableOpacity style={[styles.button, this.setBgColor()]} onPress={()=>this.props.navigation.navigate('EmployeeDetails',{employeeDetails:employee}) } underlayColor="#999" key={i}>
-            <Text style={styles.buttonText}>{employee.name}</Text>
-          </TouchableOpacity> */}
-
         </ScrollView>
       );
     }
