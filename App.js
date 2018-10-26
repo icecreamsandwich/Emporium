@@ -16,9 +16,21 @@ import {
 } from 'react-navigation';
 
 const App = createStackNavigator({
-  Home: { screen: EmployeeList },
-  EmployeeDetails: { screen: EmployeeDetails },
-  EmployeeSkills: { screen: EmployeeSkills },
+  Home: { screen: EmployeeList,
+    navigationOptions: {
+      headerTitle: 'Employees'
+    }
+  },
+  EmployeeDetails: { screen: EmployeeDetails,
+    navigationOptions: {
+      headerTitle: 'Details'
+    }
+   },
+  EmployeeSkills: { screen: EmployeeSkills ,
+    navigationOptions: {
+      headerTitle: 'Skills'
+    }
+  },
 });
 
 export default App;

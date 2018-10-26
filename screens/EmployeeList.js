@@ -25,7 +25,7 @@ export default class EmployeeList extends React.Component<*> {
   setBgColor() {
     return {
       borderRadius: 12,
-      backgroundColor: "green",
+      backgroundColor: "#3B5998",
   }
 }
   componentDidMount(){
@@ -69,7 +69,7 @@ export default class EmployeeList extends React.Component<*> {
     return (
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <View style={styles.getStartedContainer}>
-            <Text style={styles.getStartedText}> All Employees </Text>
+            {/* <Text style={styles.getStartedText}> All Employees </Text> */}
           </View>
 
           <FlatList
