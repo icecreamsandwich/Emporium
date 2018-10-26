@@ -7,7 +7,10 @@
     "dob": "01.01.1985",
     "doj": "01.01.2010",
     "Skills" :"Shell, Java, Python, Hadoop, Aws",
-    "mob":"9947875262"
+    "mob":"9947875262",
+    "profile" : "As company's CTO She has a unique talent to manage employees and employee related problems.
+She usually called 911 among the collegues. She has expertise over hosting and cloud technologies 
+including cloud , AWS and shell"
   },
  {
     "id" :2 ,
@@ -17,7 +20,10 @@
     "dob": "01.01.1990",
     "doj": "01.01.2016",
     "Skills" :"Java, Jira, Bigdata",
-    "mob":"9947875244"
+    "mob":"9947875244",
+    "profile" : "He is the fullstack developer in the company having strong java background and 
+    having experience in java frameworks such as spring and hibernate . Recently he made  his hands 
+    on reactJs for an inhouse project. He has over 4 years of experience in the stack "
  },
   {
     "id" :3,
@@ -26,7 +32,10 @@
     "email": "aaron.christo@piserve.com",
     "dob": "01.01.1995",
     "doj": "01.01.2017",
-    "Skills" :"Android, Shell, Python",
-    "mob":"9947875233"
+    "Skills" :"Android, Shell, Python, Javascript",
+    "mob":"9947875233",
+    "profile" : "Comparitively new employee but very enthusiastic to learn new technologies. 
+    Coming from system engineer background he is not hesistent to developement using python , php etc.. 
+    He have hands on experince in cloud computing , vmware technologies and scripting using python and bash"
  }
 ]
