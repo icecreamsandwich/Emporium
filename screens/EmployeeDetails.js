@@ -8,8 +8,7 @@ import { Table, Row, Rows } from 'react-native-table-component';
 import EmployeeList from './EmployeeList';
 
 export default class EmployeeDetails extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
     filteredEmployee = [];
   }
@@ -20,7 +19,7 @@ export default class EmployeeDetails extends React.Component {
       backgroundColor: randomcolor(),
       justifyContent: 'center',
       alignItems: 'center',
-    }
+    };
   }
 
   render() {
@@ -28,18 +27,13 @@ export default class EmployeeDetails extends React.Component {
     var employeeDetails = [];
     employeeDetails = navigation.getParam('employeeDetails', 'NO-ID');
     return (
-      <Swiper
-        loop={false}
-        showsPagination={false}
-        index={0}>
-
+      <Swiper loop={false} showsPagination={false} index={0}>
         <View style={this.viewStyle()}>
-          <EmployeeD label="Right"  employeeDetails={employeeDetails} />
+          <EmployeeD label="Right" employeeDetails={employeeDetails} />
         </View>
         <View style={this.viewStyle()}>
-          <EmployeeS label="Left" employeeDetails={employeeDetails}/>
+          <EmployeeS label="Left" employeeDetails={employeeDetails} />
         </View>
-
       </Swiper>
     );
   }
@@ -50,96 +44,74 @@ class EmployeeD extends React.Component {
     const state = this.state;
     var tableHead = ['Employee', 'Details'];
     var tableData = [
-        ["Address" , this.props.employeeDetails.address],
-        ["Email" , this.props.employeeDetails.email],
-        ["D.O.B" , this.props.employeeDetails.dob],
-        ["DOJ" , this.props.employeeDetails.doj],
-      ];
+      ['Address', this.props.employeeDetails.address],
+      ['Email', this.props.employeeDetails.email],
+      ['D.O.B', this.props.employeeDetails.dob],
+      ['DOJ', this.props.employeeDetails.doj],
+    ];
     return (
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={styles.content}
-      >
+      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
         <View style={styles.author}>
-          <Image
-            style={styles.avatar}
-            source={require('../images/avatar-1.png')}
-          />
+          <Image style={styles.avatar} source={require('../images/avatar-1.png')} />
           <View style={styles.meta}>
             <Text style={styles.name}>{this.props.employeeDetails.name}</Text>
             <Text style={styles.timestamp}>1st Jan 2025</Text>
           </View>
         </View>
         <Text style={styles.title}>Employee Details</Text>
-        <Text style={styles.paragraph}>
-          {this.props.employeeDetails.profile}
-        </Text>
+        <Text style={styles.paragraph}>{this.props.employeeDetails.profile}</Text>
         <Image style={styles.image} source={require('../images/book.jpg')} />
 
         <View style={styles.container}>
-          <Table borderStyle={{borderWidth: 2, borderColor: '#c8e1ff'}}>
-            <Row data={tableHead} style={styles.head} textStyle={styles.text}/>
-            <Rows data={tableData} textStyle={styles.text}/>
+          <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+            <Row data={tableHead} style={styles.head} textStyle={styles.text} />
+            <Rows data={tableData} textStyle={styles.text} />
           </Table>
         </View>
-
       </ScrollView>
-
-    )
+    );
   }
 }
-
 
 class EmployeeS extends React.Component {
   render() {
     var tableHead = ['Employee', 'Skills'];
-    var tableData = [
-        ["Skills" , this.props.employeeDetails.Skills],
-      ];
+    var tableData = [['Skills', this.props.employeeDetails.Skills]];
     return (
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={styles.content}
-      >
+      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
         <View style={styles.author}>
-          <Image
-            style={styles.avatar}
-            source={require('../images/avatar-1.png')}
-          />
+          <Image style={styles.avatar} source={require('../images/avatar-1.png')} />
           <View style={styles.meta}>
             <Text style={styles.name}>{this.props.employeeDetails.name}</Text>
             <Text style={styles.timestamp}>1st Jan 2025</Text>
           </View>
         </View>
         <Text style={styles.title}>Employee Skills</Text>
-        <Text style={styles.paragraph}>
-          {this.props.employeeDetails.profile}
-        </Text>
+        <Text style={styles.paragraph}>{this.props.employeeDetails.profile}</Text>
         <Image style={styles.image} source={require('../images/book.jpg')} />
 
         <View style={styles.container}>
-          <Table borderStyle={{borderWidth: 2, borderColor: '#c8e1ff'}}>
-            <Row data={tableHead} style={styles.head} textStyle={styles.text}/>
-            <Rows data={tableData} textStyle={styles.text}/>
+          <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+            <Row data={tableHead} style={styles.head} textStyle={styles.text} />
+            <Rows data={tableData} textStyle={styles.text} />
           </Table>
         </View>
-
       </ScrollView>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
   },
   head: {
     height: 40,
-    backgroundColor: '#f1f8ff'
+    backgroundColor: '#f1f8ff',
   },
   text: {
-    margin: 6
+    margin: 6,
   },
   content: {
     paddingVertical: 16,
