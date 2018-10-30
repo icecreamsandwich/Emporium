@@ -4,10 +4,11 @@ import * as React from 'react';
 import { ScrollView, View, Text, Image, StyleSheet } from 'react-native';
 import Swiper from 'react-native-swiper';
 import randomcolor from 'randomcolor';
+import { Table, Row, Rows } from 'react-native-table-component';
+import EmployeeList from './EmployeeList';
 
 export default class EmployeeDetails extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
     filteredEmployee = [];
   }
@@ -18,7 +19,7 @@ export default class EmployeeDetails extends React.Component {
       backgroundColor: randomcolor(),
       justifyContent: 'center',
       alignItems: 'center',
-    }
+    };
   }
 
   render() {
@@ -26,17 +27,13 @@ export default class EmployeeDetails extends React.Component {
     var employeeDetails = [];
     employeeDetails = navigation.getParam('employeeDetails', 'NO-ID');
     return (
-      <Swiper
-        loop={false}
-        showsPagination={false}
-        index={0}>
+      <Swiper loop={false} showsPagination={false} index={0}>
         <View style={this.viewStyle()}>
-          <EmployeeD label="Right"  employeeDetails={employeeDetails} />
+          <EmployeeD label="Right" employeeDetails={employeeDetails} />
         </View>
         <View style={this.viewStyle()}>
-          <EmployeeS label="Left" employeeDetails={employeeDetails}/>
+          <EmployeeS label="Left" employeeDetails={employeeDetails} />
         </View>
-
       </Swiper>
     );
   }
@@ -44,98 +41,77 @@ export default class EmployeeDetails extends React.Component {
 
 class EmployeeD extends React.Component {
   render() {
+    const state = this.state;
+    var tableHead = ['Employee', 'Details'];
+    var tableData = [
+      ['Address', this.props.employeeDetails.address],
+      ['Email', this.props.employeeDetails.email],
+      ['D.O.B', this.props.employeeDetails.dob],
+      ['DOJ', this.props.employeeDetails.doj],
+    ];
     return (
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={styles.content}
-      >
+      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
         <View style={styles.author}>
-          <Image
-            style={styles.avatar}
-            source={require('../images/avatar-1.png')}
-          />
+          <Image style={styles.avatar} source={require('../images/avatar-1.png')} />
           <View style={styles.meta}>
             <Text style={styles.name}>{this.props.employeeDetails.name}</Text>
             <Text style={styles.timestamp}>1st Jan 2025</Text>
           </View>
         </View>
         <Text style={styles.title}>Employee Details</Text>
-        <Text style={styles.paragraph}>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old.
-        </Text>
+        <Text style={styles.paragraph}>{this.props.employeeDetails.profile}</Text>
         <Image style={styles.image} source={require('../images/book.jpg')} />
-        <Text style={styles.paragraph}>
-          Richard McClintock, a Latin professor at Hampden-Sydney College in
-          Virginia, looked up one of the more obscure Latin words, consectetur,
-          from a Lorem Ipsum passage, and going through the cites of the word in
-          classical literature, discovered the undoubtable source.
-        </Text>
-        <Text style={styles.paragraph}>
-          Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-          Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
-          in 45 BC. This book is a treatise on the theory of ethics, very
-          popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
-          ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        </Text>
-        <Text style={styles.paragraph}>Address : {this.props.employeeDetails.address}</Text>
-        <Text style={styles.paragraph}>Email : {this.props.employeeDetails.email}</Text>
-        <Text style={styles.paragraph}>D.O.B : {this.props.employeeDetails.dob}</Text>
-        <Text style={styles.paragraph}>Doj : {this.props.employeeDetails.doj}</Text>
 
+        <View style={styles.container}>
+          <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+            <Row data={tableHead} style={styles.head} textStyle={styles.text} />
+            <Rows data={tableData} textStyle={styles.text} />
+          </Table>
+        </View>
       </ScrollView>
-    )
+    );
   }
 }
 
-
 class EmployeeS extends React.Component {
   render() {
+    var tableHead = ['Employee', 'Skills'];
+    var tableData = [['Skills', this.props.employeeDetails.Skills]];
     return (
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={styles.content}
-      >
+      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
         <View style={styles.author}>
-          <Image
-            style={styles.avatar}
-            source={require('../images/avatar-1.png')}
-          />
+          <Image style={styles.avatar} source={require('../images/avatar-1.png')} />
           <View style={styles.meta}>
             <Text style={styles.name}>{this.props.employeeDetails.name}</Text>
             <Text style={styles.timestamp}>1st Jan 2025</Text>
           </View>
         </View>
         <Text style={styles.title}>Employee Skills</Text>
-        <Text style={styles.paragraph}>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old.
-        </Text>
+        <Text style={styles.paragraph}>{this.props.employeeDetails.profile}</Text>
         <Image style={styles.image} source={require('../images/book.jpg')} />
-        <Text style={styles.paragraph}>
-          Richard McClintock, a Latin professor at Hampden-Sydney College in
-          Virginia, looked up one of the more obscure Latin words, consectetur,
-          from a Lorem Ipsum passage, and going through the cites of the word in
-          classical literature, discovered the undoubtable source.
-        </Text>
-        <Text style={styles.paragraph}>
-          Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-          Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
-          in 45 BC. This book is a treatise on the theory of ethics, very
-          popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
-          ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        </Text>
-        <Text style={styles.paragraph}>Skills : {this.props.employeeDetails.Skills}</Text>
+
+        <View style={styles.container}>
+          <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+            <Row data={tableHead} style={styles.head} textStyle={styles.text} />
+            <Rows data={tableData} textStyle={styles.text} />
+          </Table>
+        </View>
       </ScrollView>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  head: {
+    height: 40,
+    backgroundColor: '#f1f8ff',
+  },
+  text: {
+    margin: 6,
   },
   content: {
     paddingVertical: 16,
