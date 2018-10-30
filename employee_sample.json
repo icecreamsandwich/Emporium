@@ -2,7 +2,7 @@
  {
     "id" :1 ,
     "name": "neethu kinara",
-    "address": "Mock address",
+    "address": "kudappanakkal house , thrippunithura",
     "email": "neethu.k@piserve.com",
     "dob": "01.01.1985",
     "doj": "01.01.2010",
@@ -15,7 +15,7 @@ including cloud , AWS and shell"
  {
     "id" :2 ,
     "name": "sudeep cv",
-    "address": "Mock address",
+    "address": "Kolamveetil , Ottappalam , Palakkad",
     "email": "sudeep.cv@piserve.com",
     "dob": "01.01.1990",
     "doj": "01.01.2016",
@@ -28,7 +28,7 @@ including cloud , AWS and shell"
   {
     "id" :3,
     "name": "aaroon christopher",
-    "address": "Mock address",
+    "address": "mathayipparambil house , kaloor , kadavanthra",
     "email": "aaron.christo@piserve.com",
     "dob": "01.01.1995",
     "doj": "01.01.2017",
