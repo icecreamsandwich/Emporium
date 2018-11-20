@@ -9,10 +9,10 @@ export default class EmployeeSkills extends React.Component {
   render() {
     return (
       <Swiper loop={false} showsPagination={false} index={1}>
-        <View style={this.viewStyle()}>
+        <View>
           <TitleText label="Right" />
         </View>
-        <View style={this.viewStyle()}>
+        <View>
           <TitleText label="Left" />
         </View>
       </Swiper>

@@ -1,0 +1,366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+        "position": "relative",
+      },
+      undefined,
+    ]
+  }
+>
+  <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    autoplay={false}
+    autoplayDirection={true}
+    autoplayTimeout={2.5}
+    bounces={false}
+    contentContainerStyle={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        undefined,
+      ]
+    }
+    contentOffset={
+      Object {
+        "x": 750,
+      }
+    }
+    disableNextButton={false}
+    horizontal={true}
+    index={1}
+    loadMinimal={false}
+    loadMinimalSize={1}
+    loop={false}
+    onIndexChanged={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    pagingEnabled={true}
+    removeClippedSubviews={true}
+    scrollsToTop={false}
+    showsButtons={false}
+    showsHorizontalScrollIndicator={false}
+    showsPagination={false}
+    showsVerticalScrollIndicator={false}
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1334,
+              "width": 750,
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+          ]
+        }
+      >
+        <View>
+          <RCTScrollView
+            contentContainerStyle={
+              Object {
+                "paddingVertical": 16,
+              }
+            }
+            style={
+              Object {
+                "backgroundColor": "white",
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../images/avatar-1.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "borderRadius": 24,
+                      "height": 48,
+                      "width": 48,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "justifyContent": "center",
+                      "marginHorizontal": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000",
+                        "fontSize": 16,
+                        "fontWeight": "bold",
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Knowledge Bot
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#999",
+                        "fontSize": 14,
+                        "lineHeight": 21,
+                      }
+                    }
+                  >
+                    1st Jan 2025
+                  </Text>
+                </View>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 36,
+                    "fontWeight": "bold",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                Employee Skills
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+              </Text>
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../images/book.jpg",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 200,
+                    "marginVertical": 8,
+                    "resizeMode": "cover",
+                    "width": "100%",
+                  }
+                }
+              />
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              </Text>
+            </View>
+          </RCTScrollView>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1334,
+              "width": 750,
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+          ]
+        }
+      >
+        <View>
+          <RCTScrollView
+            contentContainerStyle={
+              Object {
+                "paddingVertical": 16,
+              }
+            }
+            style={
+              Object {
+                "backgroundColor": "white",
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                <Image
+                  source={
+                    Object {
+                      "testUri": "../../../images/avatar-1.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "borderRadius": 24,
+                      "height": 48,
+                      "width": 48,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "justifyContent": "center",
+                      "marginHorizontal": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000",
+                        "fontSize": 16,
+                        "fontWeight": "bold",
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Knowledge Bot
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#999",
+                        "fontSize": 14,
+                        "lineHeight": 21,
+                      }
+                    }
+                  >
+                    1st Jan 2025
+                  </Text>
+                </View>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 36,
+                    "fontWeight": "bold",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                Employee Skills
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+              </Text>
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../images/book.jpg",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 200,
+                    "marginVertical": 8,
+                    "resizeMode": "cover",
+                    "width": "100%",
+                  }
+                }
+              />
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                  }
+                }
+              >
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              </Text>
+            </View>
+          </RCTScrollView>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

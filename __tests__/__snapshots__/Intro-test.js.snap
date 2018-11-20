@@ -1,0 +1,376 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginHorizontal": 50,
+        }
+      }
+    />
+    <RCTScrollView
+      ItemSeparatorComponent={[Function]}
+      data={
+        Array [
+          Object {
+            "Skills": "Shell, Java, Python, Hadoop, Aws",
+            "address": "Mock address",
+            "dob": "01.01.1985",
+            "doj": "01.01.2010",
+            "email": "neethu.k@piserve.com",
+            "id": 1,
+            "mob": "9947875262",
+            "name": "neethu kinara",
+            "profile": "As company's CTO She has a unique talent to manage employees and employee related problems.She usually called 911 among the collegues. She has expertise over hosting and cloud technologiesincluding cloud , AWS and shell",
+          },
+          Object {
+            "Skills": "Java, Jira, Bigdata",
+            "address": "Mock address",
+            "dob": "01.01.1990",
+            "doj": "01.01.2016",
+            "email": "sudeep.cv@piserve.com",
+            "id": 2,
+            "mob": "9947875244",
+            "name": "sudeep cv",
+            "profile": "He is the fullstack developer in the company having strong java background andhaving experience in java frameworks such as spring and hibernate . Recently he made  his handson reactJs for an inhouse project. He has over 4 years of experience in the stack",
+          },
+          Object {
+            "Skills": "Android, Shell, Python, Javascript",
+            "address": "Mock address",
+            "dob": "01.01.1995",
+            "doj": "01.01.2017",
+            "email": "aaron.christo@piserve.com",
+            "id": 3,
+            "mob": "9947875233",
+            "name": "aaroon christopher",
+            "profile": "Comparitively new employee but very enthusiastic to learn new technologies.Coming from system engineer background he is not hesistent to developement using python , php etc..He have hands on experince in cloud computing , vmware technologies and scripting using python and bash",
+          },
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "marginBottom": 15,
+                  "padding": 15,
+                },
+                Object {
+                  "backgroundColor": "#3B5998",
+                  "borderRadius": 12,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "padding": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#e91e63",
+                    "borderRadius": 18,
+                    "height": 36,
+                    "justifyContent": "center",
+                    "width": 36,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  N
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "margin": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  neethu kinara
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#999",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  9947875262
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgba(0, 0, 0, .08)",
+                "height": 0.5,
+              }
+            }
+          />
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "marginBottom": 15,
+                  "padding": 15,
+                },
+                Object {
+                  "backgroundColor": "#3B5998",
+                  "borderRadius": 12,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "padding": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#e91e63",
+                    "borderRadius": 18,
+                    "height": 36,
+                    "justifyContent": "center",
+                    "width": 36,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  S
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "margin": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  sudeep cv
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#999",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  9947875244
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgba(0, 0, 0, .08)",
+                "height": 0.5,
+              }
+            }
+          />
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "marginBottom": 15,
+                  "padding": 15,
+                },
+                Object {
+                  "backgroundColor": "#3B5998",
+                  "borderRadius": 12,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "flexDirection": "row",
+                  "padding": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#e91e63",
+                    "borderRadius": 18,
+                    "height": 36,
+                    "justifyContent": "center",
+                    "width": 36,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  A
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "margin": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  aaroon christopher
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#999",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  9947875233
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</RCTScrollView>
+`;

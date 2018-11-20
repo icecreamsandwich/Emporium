@@ -10,7 +10,6 @@ import EmployeeList from './EmployeeList';
 export default class EmployeeDetails extends React.Component {
   constructor(props) {
     super(props);
-    filteredEmployee = [];
   }
 
   viewStyle() {
