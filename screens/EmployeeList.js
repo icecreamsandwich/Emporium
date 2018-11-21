@@ -70,7 +70,7 @@ export default class EmployeeList extends React.Component<*> {
     return (
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         <View style={styles.getStartedContainer}>
-          {/* <Text style={styles.getStartedText}> All Employees </Text> */}
+           <Text style={styles.getStartedText}> All Employees </Text>
         </View>
 
         <FlatList
